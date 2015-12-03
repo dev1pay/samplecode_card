@@ -75,5 +75,5 @@ else {
     $status_ep = $decode_cardCharging["status"];       // $status: mã trạng thái xem chi tiết tại http://developers.1pay.vn/http-apis/card-charging
     $amount_ep = $decode_cardCharging["amount"];       // giá trị thẻ cào
 // xử lý dữ liệu của merchant
-            
+  }          
 ?>
