@@ -2,9 +2,9 @@
 $transRef = getGUID(); // Mã giao dịch do MC tự sinh 
 $access_key = ''; //access key do 1 pay cung cap, require your access key from 1pay
 $secret = ''; //secret key do 1 pay cung cap, require your secret key from 1pay
-$type = $_GET["lstTelco"]; 
-$pin = $_GET["txtCode"];
-$serial = $_GET["txtSeri"]; 
+$type = $_POST["lstTelco"]; 
+$pin = $_POST["txtCode"];
+$serial = $_POST["txtSeri"]; 
 $data = "access_key=" . $access_key . "&pin=" . $pin . "&serial=" . $serial . "&transRef=" . $transRef . "&type=" . $type;
 $signature = hash_hmac("sha256", $data, $secret);
 $data.= "&signature=" . $signature;
